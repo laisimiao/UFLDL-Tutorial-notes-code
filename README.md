@@ -12,11 +12,11 @@
 
 ![UFLDL教程交流群群聊二维码.png](https://imgconvert.csdnimg.cn/aHR0cHM6Ly91cGxvYWQtaW1hZ2VzLmppYW5zaHUuaW8vdXBsb2FkX2ltYWdlcy8xNTQ2NDg3My0yYjJlZDU4ZjM4NjBiMjUyLnBuZw)  
 自己也写了博客，可以去这里看，有不对的地方，欢迎批评指正  
-有好的想法或者代码哪里有问题，都可以在下方留言哦~\
+有好的想法或者代码哪里有问题，都可以在下方留言哦~  
 
 ## Introduction about files above
 **common**:这个是去教程链接下载的data.zip解压出来的，实际就是mnist数据集  
-**myresult**:这个里面是我跑完代码截的结果图
-**stanford_dl_ex_master**:这个是代码文件夹，也是官方仓库克隆下来的，在里面添加了自己的code
-**UFLDL Tutorials notes**:这是我看教程边记录的笔记，里面会有自己的一些思考，但不是全部都理解地很透彻
-**cs229-notes1**:这是我忘了在哪里下的cs229课程讲义，但是应该只是一部分
+**myresult**:这个里面是我跑完代码截的结果图  
+**stanford_dl_ex_master**:这个是代码文件夹，也是官方仓库克隆下来的，在里面添加了自己的code  
+**UFLDL Tutorials notes**:这是我看教程边记录的笔记，里面会有自己的一些思考，但不是全部都理解地很透彻  
+**cs229-notes1**:这是我忘了在哪里下的cs229课程讲义，但是应该只是一部分  
