@@ -1,7 +1,6 @@
 # UFLDL-Tutorial-notes-code
 [UFLDL](http://ufldl.stanford.edu/)全称是：Unsupervised Feature Learning and Deep Learning
-旧版本及其中文版已经没用了
-旧教程在这里：http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B
+旧版本及其中文版已经没用了  旧教程在这里：http://ufldl.stanford.edu/wiki/index.php/UFLDL%E6%95%99%E7%A8%8B
 新版本官网地址是：[http://ufldl.stanford.edu/tutorial/](http://ufldl.stanford.edu/tutorial/)
 可以去这里下载初始代码和要用到的MNIST数据集：http://ufldl.stanford.edu/tutorial/StarterCode/
 这是一个深度学习入门的比较好的教程，还有练习！用的是MATLAB编程！
