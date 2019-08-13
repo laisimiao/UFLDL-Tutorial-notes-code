@@ -56,7 +56,7 @@ theta = rand(n,1); % 14 rows,1 column,
 %
 % Uncomment the lines below to run your vectorized code.
 %Re-initialize parameters
-theta = rand(n,1);
+% theta = rand(n,1);
 tic;
 options = struct('MaxIter', 200);
 theta = minFunc(@linear_regression_vec, theta, options, train.X, train.y);
@@ -93,4 +93,5 @@ if (plot_prices)
 end
 % average_error = grad_check(fun, theta0, num_checks, varargin)
 % [f,g] = linear_regression_vec(theta, X,y)
+% average_error = grad_check(@linear_regression, theta, 10,train.X, train.y);
 average_error = grad_check(@linear_regression_vec, theta, 10,train.X, train.y);

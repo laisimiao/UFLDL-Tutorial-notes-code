@@ -31,7 +31,7 @@ pooledFeatures = zeros(convolvedDim / poolDim, ...
 %   Use mean pooling here.
 
 %%% YOUR CODE HERE %%%
-%% METHOD1:Using for loop to pool
+%% METHOD1:Using mean to pool
 % for imageNum = 1:numImages
 %   for filterNum = 1:numFilters
 %       pooledImage = zeros(convolvedDim / poolDim, convolvedDim / poolDim);

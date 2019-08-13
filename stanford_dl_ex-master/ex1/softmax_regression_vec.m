@@ -30,7 +30,7 @@ function [f,g] = softmax_regression_vec(theta, X,y)
   A = exp([theta' * X;zeros(1,m)]);
   B = bsxfun(@rdivide, A, sum(A));
   C = log(B);
-  I = sub2ind(size(C),y,1:size(C,2)); %这里类别数还是有些问题
+  I = sub2ind(size(C),y,1:size(C,2)); 
   f = (-1) * sum(C(I));
   
   %%%%%%% calculate g %%%%%%%%%%%%
@@ -41,7 +41,7 @@ function [f,g] = softmax_regression_vec(theta, X,y)
   Y(Y~=0)=1;
   % 这里去掉Y的一列，B的一行是因为theta只有num_classes-1列
   g = (-1) * X * (Y(:,1:(size(Y,2)-1))-B(1:(size(B,1)-1),:)');
-  %%% 别人的写法，两种写法效果一样，他的速度略快%%
+  %%% 别人的写法，两种写法效果一样,主要是稀疏矩阵生成不一样一点，他的速度略快%%
   %%% 因为这里num_classes还很小，我耗时0.014272秒，他的耗时0.014249秒 %%%
 %   h = theta'*X;%h(k,i)第k个theta，第i个样本
 %   a = exp(h);

@@ -1,5 +1,5 @@
 %% Convolution Neural Network Exercise
-clear all;close all;clc;
+clear;close all;clc;
 %  Instructions
 %  ------------
 % 

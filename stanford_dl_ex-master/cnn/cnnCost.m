@@ -94,7 +94,6 @@ probs = zeros(numClasses,numImages);
 out = Wd * activationsPooled;
 out = bsxfun(@plus,out,bd);
 % out = sigmoid(out); 之前梯度检查的时候就这里没有注释，看来还是不能用激活的
-% out = bsxfun(@minus,out,max(out,[],1)); 这个不用加也行
 out = exp(out);
 probs = bsxfun(@rdivide,out,sum(out));
 preds = probs;

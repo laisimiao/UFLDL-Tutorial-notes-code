@@ -55,4 +55,6 @@ fprintf('Training accuracy: %2.1f%%\n', 100*accuracy);
 % Print out accuracy on the test set.
 accuracy = binary_classifier_accuracy(theta,test.X,test.y);
 fprintf('Test accuracy: %2.1f%%\n', 100*accuracy);
-
+% Grad check
+% average_error = grad_check(@logistic_regression, theta, 10,train.X, train.y);
+average_error = grad_check(@logistic_regression_vec, theta, 10,train.X, train.y);

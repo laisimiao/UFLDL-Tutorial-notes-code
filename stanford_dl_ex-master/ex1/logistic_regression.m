@@ -24,14 +24,20 @@ function [f,g] = logistic_regression(theta, X,y)
 %%% MY CODE HERE %%%
 h = inline('1./(1+exp(-z))');
 % Calculate f
-temp = theta' * X;
+temp = zeros(1,m);
+for i=1:m
+    for j=1:n
+        temp(i) = temp(i) + theta(j) * X(j,i);
+    end
+end
+h_temp = h(temp);
 for i = 1:m
-    f = f - (y(i) * log(h(temp(i))) + (1-y(i)) * log(1-h(temp(i))));
+    f = f - (y(i) * log(h_temp(i)) + (1-y(i)) * log(1-h_temp(i)));
 end
 
 % Calculate g
 for j=1:n
     for i=1:m
-        g(j) = g(j) + X(j,i) * (h(temp(i)) - y(i));
+        g(j) = g(j) + X(j,i) * (h_temp(i) - y(i));
     end
 end

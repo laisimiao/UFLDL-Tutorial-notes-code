@@ -10,7 +10,7 @@ W = l2rowscaled(W, 1);
 
 %%% YOUR CODE HERE %%%
 % cost Wgrad
-lambda = 0.1;
+lambda = 0.1; % 这是我实验过后比较好的
 epsilon = 1e-2;
 cost = lambda * sum(sum(sqrt((W*x).^2+epsilon))) + sum(sum((W'*W*x-x).^2)) / 2 ;
 % Wgrad = lambda * (W' * W * x./sqrt((W*x).^2+epsilon))+ W * (W' * W * x - x) * x' + W * x * (W' * W * x - x)';
